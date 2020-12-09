@@ -206,4 +206,39 @@ console.log(simpleMultiply (4,7));
 //function calculate (command, a, b)
 //command : add, substract, divide, multiply, remainder
 
+function calculate (a,b){
+    const added = (a,b) => (a + b);
+    console.log(added (5,7));
 
+    const subed = (a,b) => (a - b);
+    console.log(subed(9,3));
+
+    const divided = (a,b) => (a/b);
+    console.log(divided(12,6));
+
+    const multiplyed = (a,b) => (a*b);
+    console.log(multiplyed(3,6));
+
+    const remaindered = (a,b) => (a%b);
+    console.log(remaindered(8,3));
+    
+}
+calculate();
+
+function calculates (command,a,b){
+    switch (command) {
+        case 'add':
+            return a+b;
+        case 'substract':
+            return a-b;
+        case 'divide':
+            return a/b;
+        case 'multiply':
+            return a*b;
+        case 'remainder':
+            return a%b;
+        default:
+            throw Error('unknown command');
+    }
+}
+console.log(calculates('add',2,3));

@@ -17,7 +17,7 @@ function print(name,age){
 }
 
 const pados = { name : 'pado', age : 4};
-print(pados);
+//print(pados);
 
 pados.hasjob = true;
 console.log(pados.hasjob);
